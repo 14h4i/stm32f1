@@ -39,10 +39,13 @@ task1(void *args __attribute((unused))) {
 	for (;;) {
 		gpio_toggle(GPIOB,GPIO12);
 		vTaskDelay(pdMS_TO_TICKS(500));
+		gpio_toggle(GPIOB,GPIO12);
 		gpio_toggle(GPIOB,GPIO13);
 		vTaskDelay(pdMS_TO_TICKS(500));
+		gpio_toggle(GPIOB,GPIO13);
 		gpio_toggle(GPIOB,GPIO14);
 		vTaskDelay(pdMS_TO_TICKS(500));
+		gpio_toggle(GPIOB,GPIO14);
 	}
 }
 
